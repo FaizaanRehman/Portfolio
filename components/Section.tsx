@@ -1,0 +1,20 @@
+type SectionProps = {
+  id?: string;
+  title?: string;
+  children: React.ReactNode;
+};
+
+export default function Section({ id, title, children }: SectionProps) {
+  return (
+    <section id={id} className="py-24 px-6">
+      <div className="max-w-5xl mx-auto">
+        {title && (
+          <h2 className="text-3xl md:text-4xl font-semibold mb-12 tracking-tight text-neutral-100">
+            {title}
+          </h2>
+        )}
+        {children}
+      </div>
+    </section>
+  );
+}
