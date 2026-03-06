@@ -2,6 +2,7 @@ type OtherProjectCardProps = {
   title: string;
   description: string;
   techStack?: string[];
+  highlights?: string[];
   demoLink?: string;
   posterLink?: string;
 };
@@ -10,6 +11,7 @@ export default function OtherProjectCard({
   title,
   description,
   techStack,
+  highlights,
   demoLink,
   posterLink,
 }: OtherProjectCardProps) {
@@ -32,6 +34,12 @@ export default function OtherProjectCard({
           ))}
         </div>
       )}
+
+      <ul className="list-disc list-outside px-5 text-neutral-300 mb-4">
+        {highlights?.map((item, idx) => (
+          <li key={idx}>{item}</li>
+        ))}
+      </ul>
 
       <div className="flex gap-4 flex-wrap mt-2">
         {demoLink && (

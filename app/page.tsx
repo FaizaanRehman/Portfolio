@@ -61,15 +61,15 @@ export default function Home() {
       </Section>
 
       <Section title="Other Projects">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
           <OtherProjectCard
             title="Food Tracker Android Application"
             description="A mobile app built as part of a software engineering course demonstrating native Android development and lifecycle management."
-            techStack={[
-              "Kotlin",
-              "Android Studio",
-              "SQLite (TODO: double check this one)",
+            highlights={[
+              "Architected a background expiry-notification pipeline using WorkManager to periodically query SQLite ingredient data and dispatch alerts through NotificationManager",
+              "Implemented location-based food bank discovery by launching the Google Maps app via Android Intents, enabling users to quickly find nearby donation centers",
             ]}
+            techStack={["Kotlin", "Android Studio", "SQLite"]}
             demoLink="https://www.youtube.com/watch?v=Kc4xkIg4D3w"
           />
 

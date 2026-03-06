@@ -34,7 +34,7 @@ export default function ProjectCard({
           ))}
         </div>
 
-        <ul className="list-disc list-outside pl-5 text-neutral-300 mb-4">
+        <ul className="list-disc list-outside px-5 text-neutral-300 mb-4">
           {highlights.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
