@@ -64,19 +64,33 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
           <OtherProjectCard
             title="Food Tracker Android Application"
-            description="A mobile app built as part of a software engineering course demonstrating native Android development and lifecycle management."
+            description="An app designed to reduce food waste by helping users track ingredient inventory, receive expiration alerts, discover recipes from available ingredients, and locate nearby food banks for donations."
             highlights={[
               "Architected a background expiry-notification pipeline using WorkManager to periodically query SQLite ingredient data and dispatch alerts through NotificationManager",
               "Implemented location-based food bank discovery by launching the Google Maps app via Android Intents, enabling users to quickly find nearby donation centers",
             ]}
             techStack={["Kotlin", "Android Studio", "SQLite"]}
             demoLink="https://www.youtube.com/watch?v=Kc4xkIg4D3w"
+            githubLink="https://github.com/Ckalia11/Food-Expiry-Tracker"
           />
 
           <OtherProjectCard
             title="Student Housing Rental Website"
-            description="A project for student housing ..."
+            description="A full-stack web platform that helps university students discover and manage off-campus housing listings, featuring property browsing, document and image hosting, and real-time messaging between renters and property owners."
+            highlights={[
+              "Implemented a cloud file storage pipeline by integrating Django with Google Drive APIs, storing listing images and documents externally and persisting file URLs in the database to reduce database bloat and simplify file management",
+              "Designed and built a real-time chat system using Firebase Cloud Firestore, creating a NoSQL data model for chat rooms and messages with live synchronization across clients",
+            ]}
+            techStack={[
+              "Python",
+              "Django",
+              "React",
+              "PostgreSQL",
+              "Firebase",
+              "Google Drive API",
+            ]}
             posterLink="insert image poster here"
+            githubLink="https://github.com/YoungKeyKai/Vesta"
           />
         </div>
       </Section>

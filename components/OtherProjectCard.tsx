@@ -5,6 +5,7 @@ type OtherProjectCardProps = {
   highlights?: string[];
   demoLink?: string;
   posterLink?: string;
+  githubLink?: string;
 };
 
 export default function OtherProjectCard({
@@ -14,6 +15,7 @@ export default function OtherProjectCard({
   highlights,
   demoLink,
   posterLink,
+  githubLink,
 }: OtherProjectCardProps) {
   return (
     <div className="bg-neutral-900 rounded-2xl p-6 shadow-lg shadow-black/40 flex flex-col gap-4">
@@ -60,6 +62,16 @@ export default function OtherProjectCard({
             className="px-4 py-2 border border-neutral-700 rounded-lg hover:bg-neutral-800 transition"
           >
             Poster
+          </a>
+        )}
+        {githubLink && (
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2 border border-neutral-700 rounded-lg hover:bg-neutral-800 transition"
+          >
+            GitHub
           </a>
         )}
       </div>
