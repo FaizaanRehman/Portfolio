@@ -23,8 +23,9 @@ export default function Home() {
             "PostgreSQL",
             "Prisma",
             "APIFY",
-            "Hugging Face LLM (Meta Llama 3.1 8B)",
+            "Hugging Face LLM",
             "Cloudinary",
+            "GitHub Actions",
             "Netlify",
           ]}
           highlights={[
@@ -32,7 +33,7 @@ export default function Home() {
             "Improved deal detection precision from 52% to 76% by labeling 200 samples and refining classification logic through error analysis",
             "Migrated scheduled scraping to GitHub Actions after diagnosing cold-start delays on Render that prevented reliable job execution",
             "Mitigated third-party CDN rotation and hotlink blocking by re-hosting media via Cloudinary to ensure asset reliability",
-            "Integrated LLM inference via Hugging Face with token-efficient prompt design to generate concise deal titles with minimal API costs",
+            "Integrated LLM inference via Hugging Face (Meta Llama 3.1 8B) with token-efficient prompt design to generate concise deal titles with minimal API costs",
           ]}
           liveLink="https://dealscraperwebpage.netlify.app/?demo=1"
           githubLink="https://github.com/FaizaanRehman/deal-scraper-webpage"
@@ -63,13 +64,19 @@ export default function Home() {
       <Section title="Other Projects">
         <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
           <OtherProjectCard
-            title="Food Tracker Android Application"
-            description="An app designed to reduce food waste by helping users track ingredient inventory, receive expiration alerts, discover recipes from available ingredients, and locate nearby food banks for donations."
+            title="Food Tracker Android App"
+            description="An application designed to reduce food waste by helping users track ingredient inventory, receive expiration alerts, discover recipes from available ingredients, and locate nearby food banks for donations."
             highlights={[
               "Architected a background expiry-notification pipeline using WorkManager to periodically query SQLite ingredient data and dispatch alerts through NotificationManager",
               "Implemented location-based food bank discovery by launching the Google Maps app via Android Intents, enabling users to quickly find nearby donation centers",
             ]}
-            techStack={["Kotlin", "Android Studio", "SQLite"]}
+            techStack={[
+              "Kotlin",
+              "Android Studio",
+              "SQLite",
+              "WorkManager",
+              "Google Maps Intents",
+            ]}
             demoLink="https://www.youtube.com/watch?v=Kc4xkIg4D3w"
             githubLink="https://github.com/Ckalia11/Food-Expiry-Tracker"
           />
@@ -86,8 +93,9 @@ export default function Home() {
               "Django",
               "React",
               "PostgreSQL",
-              "Firebase",
+              "Firebase Firstore",
               "Google Drive API",
+              "REST APIs",
             ]}
             posterLink="insert image poster here"
             githubLink="https://github.com/YoungKeyKai/Vesta"
@@ -101,8 +109,11 @@ export default function Home() {
             "React",
             "Next.js",
             "TypeScript",
-            "Tailwind",
             "Node.js",
+            "PostgreSQL",
+            "GitHub Actions",
+            "Python",
+            "Tailwind",
             "Unreal Engine",
             "Android Studio",
             "Git",

@@ -7,10 +7,10 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-neutral-400 max-w-2xl mb-10 leading-relaxed">
-          Software Developer with a background in Computer Engineering.
-          Currently a UI programmer on a live-service title, building scalable
-          systems within a production environment. Passionate about delivering
-          reliable, user-focused software at scale.
+          Software Developer specializing in UI systems and full-stack
+          applications. Currently a UI programmer on a live-service title,
+          building scalable systems within a production environment. Passionate
+          about delivering reliable, user-focused software at scale.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
