@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type OtherProjectCardProps = {
   title: string;
   description: string;
@@ -6,6 +8,7 @@ type OtherProjectCardProps = {
   demoLink?: string;
   posterLink?: string;
   githubLink?: string;
+  detailsLink?: string;
 };
 
 export default function OtherProjectCard({
@@ -16,6 +19,7 @@ export default function OtherProjectCard({
   demoLink,
   posterLink,
   githubLink,
+  detailsLink,
 }: OtherProjectCardProps) {
   return (
     <div className="bg-neutral-900 rounded-2xl p-6 shadow-lg shadow-black/40 flex flex-col gap-4">
@@ -73,6 +77,16 @@ export default function OtherProjectCard({
           >
             GitHub
           </a>
+        )}
+
+        {/* Internal App Router Link*/}
+        {detailsLink && (
+          <Link
+            href={detailsLink}
+            className="px-4 py-2 border border-neutral-700 rounded-lg hover:bg-neutral-800 transition"
+          >
+            View Details
+          </Link>
         )}
       </div>
     </div>

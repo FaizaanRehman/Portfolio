@@ -14,7 +14,7 @@ export default function Home() {
       <Section id="projects" title="Featured Project">
         <ProjectCard
           title="Deal Scraper App"
-          description="A full-stack web application that aggregates time-sensitive restaurant promotions from social media into a centralized interface."
+          description="A full-stack web application that aggregates time-sensitive restaurant promotions from social media and presents them in a centralized dashboard for easy discovery."
           techStack={[
             "Node.js",
             "Next.js",
@@ -64,8 +64,8 @@ export default function Home() {
       <Section title="Other Projects">
         <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
           <OtherProjectCard
-            title="Food Tracker Android App"
-            description="An application designed to reduce food waste by helping users track ingredient inventory, receive expiration alerts, discover recipes from available ingredients, and locate nearby food banks for donations."
+            title="Food Tracker App"
+            description="An Android application designed to reduce food waste by helping users track inventory, receive expiration alerts, discover recipes from available ingredients, and locate nearby food donation centres."
             highlights={[
               "Architected a background expiry-notification pipeline using WorkManager to periodically query SQLite ingredient data and dispatch alerts through NotificationManager",
               "Implemented location-based food bank discovery by launching the Google Maps app via Android Intents, enabling users to quickly find nearby donation centers",
@@ -79,11 +79,12 @@ export default function Home() {
             ]}
             demoLink="https://www.youtube.com/watch?v=Kc4xkIg4D3w"
             githubLink="https://github.com/Ckalia11/Food-Expiry-Tracker"
+            detailsLink="/projects/food-tracker"
           />
 
           <OtherProjectCard
             title="Student Housing Rental Website"
-            description="A full-stack web platform that helps university students discover and manage off-campus housing listings, featuring property browsing, document and image hosting, and real-time messaging between renters and property owners."
+            description="A full-stack web platform that allows university students to browse off-campus housing listings, view property media and documents, and communicate with property owners through a real-time messaging system."
             highlights={[
               "Implemented a cloud file storage pipeline by integrating Django with Google Drive APIs, storing listing images and documents externally and persisting file URLs in the database to reduce database bloat and simplify file management",
               "Designed and built a real-time chat system using Firebase Cloud Firestore, creating a NoSQL data model for chat rooms and messages with live synchronization across clients",
@@ -99,6 +100,7 @@ export default function Home() {
             ]}
             posterLink="insert image poster here"
             githubLink="https://github.com/YoungKeyKai/Vesta"
+            detailsLink="/projects/student-housing"
           />
         </div>
       </Section>
