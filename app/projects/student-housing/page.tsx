@@ -9,9 +9,9 @@ export default function StudentHousingProjectt() {
           Student Housing Website
         </h1>
         <p className="text-lg text-neutral-400 max-w-2xl mx-auto leading-relaxed">
-          A full-stack web platform for university students to browse off-campus
-          housing, view property media and documents, and chat with property
-          owners in real time.
+          A full-stack web platform that allows university students to browse
+          off-campus housing listings, view property media and documents, and
+          chat with property owners in real-time.
         </p>
         {/* Optional Hero Screenshot */}
         <img
@@ -36,19 +36,22 @@ export default function StudentHousingProjectt() {
       {/* Technical Highlights */}
       <section className="mb-10">
         <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
-        <ul className="list-disc list-inside text-neutral-400 space-y-2">
+        <ul className="list-disc list-outside pl-5 text-neutral-400 space-y-3">
           <li>
-            Implemented cloud file storage using{" "}
-            <strong>Google Drive API</strong>, storing file URLs in the database
-            to reduce bloat.
+            Built a cloud-based file storage pipeline using the
+            <strong> Google Drive API</strong>, storing media externally and
+            persisting file URLs in the database to prevent database bloat.
           </li>
           <li>
-            Designed and built a real-time chat system with{" "}
-            <strong>Firebase Cloud Firestore</strong> for live messaging.
+            Designed a real-time chat system using
+            <strong> Firebase Cloud Firestore</strong>, enabling live messaging
+            between students and property owners without a custom WebSocket
+            backend.
           </li>
           <li>
-            Created a flexible data model supporting multiple images and
-            documents per property listing.
+            Implemented a flexible listing data model allowing each property to
+            attach multiple images and supporting documents such as lease
+            agreements and floor plans.
           </li>
         </ul>
       </section>
@@ -76,9 +79,14 @@ export default function StudentHousingProjectt() {
         <div className="max-w-4xl mx-auto bg-neutral-900 p-6 rounded-2xl">
           <img
             src="/screenshots/student-housing/chatroomModel.png"
-            alt="Food Tracker Android App Architecture Diagram"
+            alt="Student Housing Chat System Model"
             className="rounded-xl shadow-lg w-full"
           />
+
+          <p className="text-sm text-neutral-500 text-center mt-3">
+            Firestore NoSQL data model used to represent chat rooms and
+            messages.
+          </p>
         </div>
       </section>
 
@@ -86,23 +94,34 @@ export default function StudentHousingProjectt() {
       <section className="mb-10">
         <h2 className="text-2xl font-semibold mb-4">Screenshots</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <img
-            src="/screenshots/student-housing/listingView.png"
-            alt="Property Listing Page"
-            className="rounded-xl shadow-lg"
-          />
-          <img
-            src="/screenshots/student-housing/chatroomView.png"
-            alt="Chat Interface"
-            className="rounded-xl shadow-lg"
-          />
+          <div className="space-y-2">
+            <img
+              src="/screenshots/student-housing/listingView.png"
+              alt="Property Listing Page"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm text-neutral-500 mt-2 text-center">
+              Property listing page displaying images and property details
+            </p>
+          </div>
+
+          <div className="space-y-2">
+            <img
+              src="/screenshots/student-housing/chatroomView.png"
+              alt="Chat Interface"
+              className="rounded-xl shadow-lg"
+            />
+            <p className="text-sm text-neutral-500 mt-2 text-center">
+              Real-time messaging interface between students and/or landlords
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Back Link */}
       <section className="text-center">
         <Link
-          href="/#OtherProjects"
+          href="/#otherProjects"
           className="px-6 py-3 border border-neutral-700 rounded-xl hover:bg-neutral-900 transition"
         >
           Back to Portfolio

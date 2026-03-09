@@ -61,14 +61,14 @@ export default function Home() {
         />
       </Section>
 
-      <Section title="Other Projects">
+      <Section title="Other Projects" id="otherProjects">
         <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
           <OtherProjectCard
             title="Food Tracker App"
             description="An Android application designed to reduce food waste by helping users track inventory, receive expiration alerts, discover recipes from available ingredients, and locate nearby food donation centres."
             highlights={[
-              "Architected a background expiry-notification pipeline using WorkManager to periodically query SQLite ingredient data and dispatch alerts through NotificationManager",
-              "Implemented location-based food bank discovery by launching the Google Maps app via Android Intents, enabling users to quickly find nearby donation centers",
+              "Built a background expiration notification system using Android WorkManager, NotificationManager, and SQLite",
+              "Integrated location-based food bank discovery through Google Maps Intents",
             ]}
             techStack={[
               "Kotlin",
@@ -86,8 +86,8 @@ export default function Home() {
             title="Student Housing Rental Website"
             description="A full-stack web platform that allows university students to browse off-campus housing listings, view property media and documents, and communicate with property owners through a real-time messaging system."
             highlights={[
-              "Implemented a cloud file storage pipeline by integrating Django with Google Drive APIs, storing listing images and documents externally and persisting file URLs in the database to reduce database bloat and simplify file management",
-              "Designed and built a real-time chat system using Firebase Cloud Firestore, creating a NoSQL data model for chat rooms and messages with live synchronization across clients",
+              "Built a cloud file storage system using Django and Google Drive to handle listing media efficiently",
+              "Implemented real-time messaging with Firebase Cloud Firestore for live student-owner communication",
             ]}
             techStack={[
               "Python",

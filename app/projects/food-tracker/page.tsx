@@ -41,26 +41,35 @@ export default function FoodTrackerProject() {
       <section className="mb-10">
         <h2 className="text-2xl font-semibold mb-4">Overview</h2>
         <p className="text-neutral-400 leading-relaxed">
-          Food Tracker allows users to track food items by adding details like
-          quantity, expiry dates, and images. The app sends notifications for
-          expiring items and lets users discover recipes using their available
-          ingredients via the Spoonacular API. Users can also locate nearby food
-          banks for donations through Google Maps integration.
+          Food Tracker is an Android application designed to help users reduce
+          household food waste by tracking their inventory and sending
+          expiration alerts. The app also allows users to discover recipes based
+          on available ingredients through the Spoonacular API and locate nearby
+          food banks using Google Maps integration for convenient food
+          donations.
         </p>
       </section>
 
       {/* Technical Highlights */}
       <section className="mb-10">
         <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
-        <ul className="list-disc list-inside text-neutral-400 space-y-2">
+        <ul className="list-disc list-outside pl-5 text-neutral-400 space-y-3">
           <li>
-            Implemented expiration notifications using
-            <strong>WorkManager</strong> to periodically query
-            <strong>SQLite</strong> inventory data.
+            Built an inventory tracking system allowing users to store
+            ingredient details including quantity, expiration date, and images
+            using a local <strong>SQLite database</strong>.
+          </li>
+
+          <li>
+            Implemented a background expiration notification pipeline using{" "}
+            <strong>Android WorkManager</strong> to periodically query stored
+            ingredient data and dispatch alerts through the{" "}
+            <strong>NotificationManager</strong>.
           </li>
           <li>
-            Integrated location-based food bank discovery via
-            <strong>Google Maps Intents</strong> for seamless navigation.
+            Implemented location-based food bank discovery by launching
+            <strong>Google Maps via Android Intents</strong> to help users
+            quickly find nearby donation centers.
           </li>
         </ul>
       </section>
@@ -78,6 +87,9 @@ export default function FoodTrackerProject() {
             WorkManager
           </span>
           <span className="px-2 py-1 bg-neutral-800 rounded-lg">
+            NotificationManager
+          </span>
+          <span className="px-2 py-1 bg-neutral-800 rounded-lg">
             Google Maps API
           </span>
         </div>
@@ -92,13 +104,18 @@ export default function FoodTrackerProject() {
             alt="Food Tracker Android App Architecture Diagram"
             className="rounded-xl shadow-lg w-full"
           />
+          <p className="text-sm text-neutral-500 text-center mt-3">
+            High-level architecture showing the interaction between the Android
+            UI layer, SQLite data storage, background WorkManager jobs, and
+            external APIs.
+          </p>
         </div>
       </section>
 
       {/* Back Link */}
       <section className="text-center">
         <Link
-          href="/#OtherProjects"
+          href="/#otherProjects"
           className="px-6 py-3 border border-neutral-700 rounded-xl hover:bg-neutral-900 transition"
         >
           Back to Portfolio
