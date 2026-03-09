@@ -6,7 +6,6 @@ type OtherProjectCardProps = {
   techStack?: string[];
   highlights?: string[];
   demoLink?: string;
-  posterLink?: string;
   githubLink?: string;
   detailsLink?: string;
 };
@@ -17,7 +16,6 @@ export default function OtherProjectCard({
   techStack,
   highlights,
   demoLink,
-  posterLink,
   githubLink,
   detailsLink,
 }: OtherProjectCardProps) {
@@ -56,16 +54,6 @@ export default function OtherProjectCard({
             className="px-4 py-2 bg-white text-black rounded-lg hover:opacity-90 transition"
           >
             Demo
-          </a>
-        )}
-        {posterLink && (
-          <a
-            href={posterLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 border border-neutral-700 rounded-lg hover:bg-neutral-800 transition"
-          >
-            Poster
           </a>
         )}
         {githubLink && (

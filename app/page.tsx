@@ -77,7 +77,7 @@ export default function Home() {
               "WorkManager",
               "Google Maps Intents",
             ]}
-            demoLink="https://www.youtube.com/watch?v=Kc4xkIg4D3w"
+            demoLink="https://youtu.be/Kc4xkIg4D3w?si=6GV5rKVGGI_7xc0A&t=301"
             githubLink="https://github.com/Ckalia11/Food-Expiry-Tracker"
             detailsLink="/projects/food-tracker"
           />
@@ -98,7 +98,6 @@ export default function Home() {
               "Google Drive API",
               "REST APIs",
             ]}
-            posterLink="insert image poster here"
             githubLink="https://github.com/YoungKeyKai/Vesta"
             detailsLink="/projects/student-housing"
           />

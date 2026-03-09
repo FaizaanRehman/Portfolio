@@ -15,9 +15,9 @@ export default function StudentHousingProjectt() {
         </p>
         {/* Optional Hero Screenshot */}
         <img
-          src="/screenshots/student-housing-hero.png"
+          src="/screenshots/student-housing/hero.png"
           alt="Student Housing Website Screenshot"
-          className="mt-6 mx-auto rrounded-xl shadow-lg"
+          className="mt-6 mx-auto rounded-md shadow-lg"
         />
       </section>
 
@@ -27,8 +27,8 @@ export default function StudentHousingProjectt() {
         <p className="text-neutral-400 leading-relaxed">
           The website allows students to explore off-campus listings with images
           and documents attached to each property. Users can communicate with
-          owners via a real-time chat system built with Firebase. Google Drive
-          is used for file storage to handle images and documents externally,
+          owners via a real-time chat system built with Firebase. Files are
+          stored via Google Drive to handle images and documents externally,
           reducing database load and simplifying file management.
         </p>
       </section>
@@ -38,12 +38,12 @@ export default function StudentHousingProjectt() {
         <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
         <ul className="list-disc list-inside text-neutral-400 space-y-2">
           <li>
-            Implemented cloud file storage using
+            Implemented cloud file storage using{" "}
             <strong>Google Drive API</strong>, storing file URLs in the database
             to reduce bloat.
           </li>
           <li>
-            Designed and built a real-time chat system with
+            Designed and built a real-time chat system with{" "}
             <strong>Firebase Cloud Firestore</strong> for live messaging.
           </li>
           <li>
@@ -70,25 +70,31 @@ export default function StudentHousingProjectt() {
         </div>
       </section>
 
+      {/* Architecture */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-4">Architecture</h2>
+        <div className="max-w-4xl mx-auto bg-neutral-900 p-6 rounded-2xl">
+          <img
+            src="/screenshots/student-housing/chatroomModel.png"
+            alt="Food Tracker Android App Architecture Diagram"
+            className="rounded-xl shadow-lg w-full"
+          />
+        </div>
+      </section>
+
       {/* Screenshots */}
       <section className="mb-10">
         <h2 className="text-2xl font-semibold mb-4">Screenshots</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <img
-            src="/screenshots/student-housing-listing.png"
+            src="/screenshots/student-housing/listingView.png"
             alt="Property Listing Page"
             className="rounded-xl shadow-lg"
           />
           <img
-            src="/screenshots/student-housing-chat.png"
+            src="/screenshots/student-housing/chatroomView.png"
             alt="Chat Interface"
             className="rounded-xl shadow-lg"
-          />
-          {/* Optional Architecture Diagram */}
-          <img
-            src="/screenshots/student-housing-architecture.png"
-            alt="Architecture Diagram"
-            className="rounded-xl shadow-lg md:col-span-2"
           />
         </div>
       </section>

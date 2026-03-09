@@ -13,11 +13,28 @@ export default function FoodTrackerProject() {
           track inventory, receive expiration alerts, discover recipes from
           available ingredients, and locate nearby food donation centres.
         </p>
-        <img
-          src="/screenshots/food-tracker-hero.png"
-          alt="Food Tracker App Screenshot"
-          className="mt-6 mx-auto rounded-xl shadow-lg"
-        />
+        <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <img
+            src="/screenshots/food-tracker/HomeView.png"
+            alt="Home View"
+            className="rounded-xl shadow-lg"
+          />
+          <img
+            src="/screenshots/food-tracker/ItemDetailView.png"
+            alt="Detail View"
+            className="rounded-xl shadow-lg"
+          />
+          <img
+            src="/screenshots/food-tracker/ItemEditView.png"
+            alt="Edit View"
+            className="rounded-xl shadow-lg"
+          />
+          <img
+            src="/screenshots/food-tracker/MapsView.png"
+            alt="Maps View"
+            className="rounded-xl shadow-lg"
+          />
+        </div>
       </section>
 
       {/* Overview */}
@@ -66,24 +83,14 @@ export default function FoodTrackerProject() {
         </div>
       </section>
 
-      {/* Screenshots */}
+      {/* Architecture */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-4">Screenshots</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <h2 className="text-2xl font-semibold mb-4">Architecture</h2>
+        <div className="max-w-4xl mx-auto bg-neutral-900 p-6 rounded-2xl">
           <img
-            src="/screenshots/food-tracker-pantry.png"
-            alt="Pantry Inventory Screen"
-            className="rounded-xl shadow-lg"
-          />
-          <img
-            src="/screenshots/food-tracker-recipes.png"
-            alt="Recipe Discovery Screen"
-            className="rounded-xl shadow-lg"
-          />
-          <img
-            src="/screenshots/food-tracker-notification.png"
-            alt="Notification Alert"
-            className="rounded-xl shadow-lg md:col-span-2"
+            src="/screenshots/food-tracker/architecture.png"
+            alt="Food Tracker Android App Architecture Diagram"
+            className="rounded-xl shadow-lg w-full"
           />
         </div>
       </section>
