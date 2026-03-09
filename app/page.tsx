@@ -104,7 +104,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section title="Skills">
+      <Section>
         <Skills
           skills={[
             "React",
@@ -123,7 +123,7 @@ export default function Home() {
         />
       </Section>
 
-      <Section title="Contact">
+      <Section id="contact">
         <Contact
           email="fhrehman@uwaterloo.ca"
           github="https://github.com/faizaanrehman"

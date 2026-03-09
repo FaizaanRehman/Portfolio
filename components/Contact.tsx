@@ -17,7 +17,7 @@ export default function Contact({
         <h3 className="text-2xl md:text-3xl font-semibold text-neutral-100 mb-3">
           Get In Touch
         </h3>
-        <p className="text-neutral-400 leading-relaxed max-w-xl">
+        <p className="text-neutral-400 leading-relaxed">
           I'm currently open to software development roles. Feel free to reach
           out - I'd love to connect.
         </p>
