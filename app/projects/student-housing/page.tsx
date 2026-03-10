@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function StudentHousingProjectt() {
+export default function StudentHousingProject() {
   return (
     <main className="max-w-5xl mx-auto py-16 px-6">
       {/* Hero Section */}
@@ -41,7 +41,7 @@ export default function StudentHousingProjectt() {
 
       {/* Technical Highlights */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
+        <h2 className="text-2xl font-semibold mb-4">Highlights</h2>
         <ul className="list-disc list-outside pl-5 text-neutral-400 space-y-3">
           <li>
             Built a cloud-based file storage pipeline using the

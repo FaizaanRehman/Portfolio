@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type ProjectCardProps = {
   title: string;
   description: string;
@@ -5,6 +7,7 @@ type ProjectCardProps = {
   highlights: string[];
   liveLink?: string;
   githubLink?: string;
+  detailsLink?: string;
 };
 
 export default function ProjectCard({
@@ -14,6 +17,7 @@ export default function ProjectCard({
   highlights,
   liveLink,
   githubLink,
+  detailsLink,
 }: ProjectCardProps) {
   return (
     <div className="bg-neutral-900 rounded-2xl p-8 shadow-lg shadow-black/40 flex flex-col md:flex-row gap-6">
@@ -60,6 +64,15 @@ export default function ProjectCard({
             >
               GitHub
             </a>
+          )}
+          {/* Internal App Router Link*/}
+          {detailsLink && (
+            <Link
+              href={detailsLink}
+              className="px-4 py-2 border border-neutral-700 rounded-lg hover:bg-neutral-800 transition"
+            >
+              View Details
+            </Link>
           )}
         </div>
       </div>

@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <Hero />
 
-      <Section id="projects" title="Featured Project">
+      <Section id="featuredProject" title="Featured Project">
         <ProjectCard
           title="Deal Scraper App"
           description="A full-stack web application that aggregates time-sensitive restaurant promotions from social media and presents them in a centralized dashboard for easy discovery."
@@ -29,14 +29,16 @@ export default function Home() {
             "Netlify",
           ]}
           highlights={[
-            "Architected a rate-limited scraping pipeline with rule-based parsing to extract time-sensitive deals and structured date ranges",
-            "Improved deal detection precision from 52% to 76% by labeling 200 samples and refining classification logic through error analysis",
-            "Migrated scheduled scraping to GitHub Actions after diagnosing cold-start delays on Render that prevented reliable job execution",
-            "Mitigated third-party CDN rotation and hotlink blocking by re-hosting media via Cloudinary to ensure asset reliability",
-            "Integrated LLM inference via Hugging Face (Meta Llama 3.1 8B) with token-efficient prompt design to generate concise deal titles with minimal API costs",
+            "Automated Instagram scraping pipeline to detect limited-time restaurant deals",
+            "Improved deal detection precision from 52% to 76% through error analysis and rule refinement",
+            "Scheduled scraping with GitHub Actions to ensure reliable daily updates",
+            "Hosted images on Cloudinary to prevent broken links and ensure dashboard reliability",
+            "Generated concise deal titles with HuggingFace LLM for digestible, easy-to-scan summaries",
+            "Mobile-first, responsive dashboard with dark/light mode and intuitive deal cards",
           ]}
           liveLink="https://dealscraperwebpage.netlify.app/?demo=1"
           githubLink="https://github.com/FaizaanRehman/deal-scraper-webpage"
+          detailsLink="/projects/deal-scraper"
         />
       </Section>
 
