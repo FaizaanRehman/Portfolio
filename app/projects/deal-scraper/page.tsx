@@ -122,7 +122,7 @@ export default function DealScraperProject() {
         <h2 className="text-2xl font-semibold mb-4">Architecture</h2>
         <div className="max-w-4xl mx-auto bg-neutral-900 p-6 rounded-2xl">
           <a
-            href="/screenshots/food-tracker/architecture.png"
+            href="/screenshots/deal-scraper/architecture.png"
             target="_blank"
             rel="noopener noreferrer"
           >
