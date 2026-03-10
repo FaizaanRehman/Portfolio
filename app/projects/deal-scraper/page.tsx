@@ -5,11 +5,22 @@ export default function DealScraperProject() {
     <main className="max-w-5xl mx-auto py-16 px-6">
       {/* Hero Section */}
       <section className="mb-12 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Deal Scraper</h1>
-        <p className="text-lg text-neutral-400 max-w-2xl mx-auto leading-relaxed">
-          A full-stack web application that aggregates limited-time restaurant
-          deals into a clear, concise dashboard.
-        </p>
+        <div className="mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Deal Scraper</h1>
+          <p className="text-lg text-neutral-400 max-w-2xl mx-auto mb-4 leading-relaxed">
+            A full-stack web application that aggregates limited-time restaurant
+            deals into a clear, concise dashboard.
+          </p>
+
+          <a
+            href="https://dealscraperwebpage.netlify.app/?demo=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2 bg-white text-black font-medium rounded-lg hover:opacity-90 transition"
+          >
+            Try it out &rarr;
+          </a>
+        </div>
         <a
           href="/screenshots/deal-scraper/mainView.png"
           target="_blank"
@@ -137,7 +148,7 @@ export default function DealScraperProject() {
         >
           <img
             src="/screenshots/deal-scraper/mobileView.jpg"
-            alt="Chat Interface"
+            alt="Mobile View"
             className="rounded-xl shadow-lg hover:scale-[1.02] transition max-w-xs w-full mx-auto"
           />
         </a>
