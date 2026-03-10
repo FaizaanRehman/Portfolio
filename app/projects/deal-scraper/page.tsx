@@ -11,14 +11,14 @@ export default function DealScraperProject() {
           deals into a clear, concise dashboard.
         </p>
         <a
-          href="/screenshots/deal-scraper/main-view.png"
+          href="/screenshots/deal-scraper/mainView.png"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
-            src="/screenshots/deal-scraper/main-view.png"
-            alt="Main View"
-            className="rounded-xl shadow-lg hover:scale-[1.02] transition"
+            src="/screenshots/deal-scraper/mainView.png"
+            alt="Deal Scraper Webpage Screenshot"
+            className="mt-6 mx-auto rounded-md shadow-lg hover:scale-[1.02] transition"
           />
         </a>
       </section>
@@ -126,6 +126,24 @@ export default function DealScraperProject() {
             pipeline, database storage, and frontend dashboard.
           </p>
         </div>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-4">Screenshots</h2>
+        <a
+          href="/screenshots/deal-scraper/mobileView.jpg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/screenshots/deal-scraper/mobileView.jpg"
+            alt="Chat Interface"
+            className="rounded-xl shadow-lg hover:scale-[1.02] transition max-w-xs w-full mx-auto"
+          />
+        </a>
+        <p className="text-sm text-neutral-500 mt-4 text-center">
+          Mobile dashboard view optimized for browsing deals on phones
+        </p>
       </section>
 
       {/* Back Link */}
