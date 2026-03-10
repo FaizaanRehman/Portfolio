@@ -8,9 +8,9 @@ export default function Hero() {
 
         <p className="text-lg md:text-xl text-neutral-400 max-w-2xl mb-10 leading-relaxed">
           Software Developer specializing in UI systems and full-stack
-          applications. Currently a programmer on a live-service multiplayer
-          title. Passionate about building reliable, user-focused software at
-          scale.
+          applications. B.A.Sc. in Computer Engineering from{" "}
+          <strong>University of Waterloo</strong>. Currently working as a
+          programmer on a live-service multiplayer title.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
