@@ -18,8 +18,7 @@ export default function Contact({
     <div className="bg-neutral-900 rounded-2xl p-8 shadow-lg shadow-black/40 flex flex-col gap-6">
       <div>
         <p className="text-neutral-400 leading-relaxed">
-          I'm currently open to software development roles. Feel free to reach
-          out - I'd love to connect.
+          Feel free to reach out - I'd love to connect.
         </p>
       </div>
 
