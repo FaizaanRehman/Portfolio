@@ -1,3 +1,6 @@
+import { FaGithub, FaLinkedin, FaRegEnvelope } from "react-icons/fa";
+import { HiOutlineDocumentText } from "react-icons/hi";
+
 type ContactProps = {
   email: string;
   github: string;
@@ -23,8 +26,9 @@ export default function Contact({
       <div className="flex flex-wrap gap-4">
         <a
           href={`mailto:${email}`}
-          className="px-5 py-2 bg-white text-black rounded-lg font-medium hover:opacity-90 transition"
+          className="flex items-center gap-2 pl-4 pr-5 py-2 bg-white text-black rounded-lg font-medium hover:opacity-90 transition"
         >
+          <FaRegEnvelope className="w-4 h-4" />
           Email
         </a>
 
@@ -32,8 +36,9 @@ export default function Contact({
           href={linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-5 py-2 border border-neutral-700 rounded-lg hover:bg-neutral-800 transition"
+          className="flex items-center gap-2 pl-4 pr-5 py-2 border border-neutral-700 rounded-lg hover:bg-neutral-800 transition"
         >
+          <FaLinkedin className="w-4 h-4" />
           LinkedIn
         </a>
 
@@ -41,8 +46,9 @@ export default function Contact({
           href={github}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-5 py-2 border border-neutral-700 rounded-lg hover:bg-neutral-800 transition"
+          className="flex items-center gap-2 pl-4 pr-5 py-2 border border-neutral-700 rounded-lg hover:bg-neutral-800 transition"
         >
+          <FaGithub className="w-4 h-4" />
           GitHub
         </a>
 
@@ -51,8 +57,9 @@ export default function Contact({
             href={resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-2 border border-neutral-700 rounded-lg hover:bg-neutral-800 transition"
+            className="flex items-center gap-2 pl-4 pr-5 py-2 border border-neutral-700 rounded-lg hover:bg-neutral-800 transition"
           >
+            <HiOutlineDocumentText className="w-4 h-4" />
             Resume
           </a>
         )}
