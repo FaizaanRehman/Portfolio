@@ -14,11 +14,17 @@ export default function StudentHousingProjectt() {
           chat with property owners in real-time.
         </p>
         {/* Optional Hero Screenshot */}
-        <img
-          src="/screenshots/student-housing/hero.png"
-          alt="Student Housing Website Screenshot"
-          className="mt-6 mx-auto rounded-md shadow-lg"
-        />
+        <a
+          href="/screenshots/student-housing/hero.png"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/screenshots/student-housing/hero.png"
+            alt="Student Housing Website Screenshot"
+            className="mt-6 mx-auto rounded-md shadow-lg hover:scale-[1.02] transition"
+          />
+        </a>
       </section>
 
       {/* Overview */}
@@ -77,11 +83,17 @@ export default function StudentHousingProjectt() {
       <section className="mb-10">
         <h2 className="text-2xl font-semibold mb-4">Architecture</h2>
         <div className="max-w-4xl mx-auto bg-neutral-900 p-6 rounded-2xl">
-          <img
-            src="/screenshots/student-housing/chatroomModel.png"
-            alt="Student Housing Chat System Model"
-            className="rounded-xl shadow-lg w-full"
-          />
+          <a
+            href="/screenshots/student-housing/chatroomModel.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/screenshots/student-housing/chatroomModel.png"
+              alt="Student Housing Chat System Model"
+              className="rounded-xl shadow-lg w-full hover:scale-[1.02] transition"
+            />
+          </a>
 
           <p className="text-sm text-neutral-500 text-center mt-3">
             Firestore NoSQL data model used to represent chat rooms and
@@ -95,22 +107,34 @@ export default function StudentHousingProjectt() {
         <h2 className="text-2xl font-semibold mb-4">Screenshots</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-2">
-            <img
-              src="/screenshots/student-housing/listingView.png"
-              alt="Property Listing Page"
-              className="rounded-xl shadow-lg"
-            />
+            <a
+              href="/screenshots/student-housing/listingView.png"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/screenshots/student-housing/listingView.png"
+                alt="Property Listing Page"
+                className="rounded-xl shadow-lg hover:scale-[1.02] transition"
+              />
+            </a>
             <p className="text-sm text-neutral-500 mt-2 text-center">
               Property listing page displaying images and property details
             </p>
           </div>
 
           <div className="space-y-2">
-            <img
-              src="/screenshots/student-housing/chatroomView.png"
-              alt="Chat Interface"
-              className="rounded-xl shadow-lg"
-            />
+            <a
+              href="/screenshots/student-housing/chatroomView.png"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/screenshots/student-housing/chatroomView.png"
+                alt="Chat Interface"
+                className="rounded-xl shadow-lg hover:scale-[1.02] transition"
+              />
+            </a>
             <p className="text-sm text-neutral-500 mt-2 text-center">
               Real-time messaging interface between students and/or landlords
             </p>

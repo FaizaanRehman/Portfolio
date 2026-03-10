@@ -14,26 +14,50 @@ export default function FoodTrackerProject() {
           available ingredients, and locate nearby food donation centres.
         </p>
         <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-          <img
-            src="/screenshots/food-tracker/HomeView.png"
-            alt="Home View"
-            className="rounded-xl shadow-lg"
-          />
-          <img
-            src="/screenshots/food-tracker/ItemDetailView.png"
-            alt="Detail View"
-            className="rounded-xl shadow-lg"
-          />
-          <img
-            src="/screenshots/food-tracker/ItemEditView.png"
-            alt="Edit View"
-            className="rounded-xl shadow-lg"
-          />
-          <img
-            src="/screenshots/food-tracker/MapsView.png"
-            alt="Maps View"
-            className="rounded-xl shadow-lg"
-          />
+          <a
+            href="/screenshots/food-tracker/HomeView.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/screenshots/food-tracker/HomeView.png"
+              alt="Home View"
+              className="rounded-xl shadow-lg hover:scale-[1.02] transition"
+            />
+          </a>
+          <a
+            href="/screenshots/food-tracker/ItemDetailView.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/screenshots/food-tracker/ItemDetailView.png"
+              alt="Detail View"
+              className="rounded-xl shadow-lg hover:scale-[1.02] transition"
+            />
+          </a>
+          <a
+            href="/screenshots/food-tracker/ItemEditView.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/screenshots/food-tracker/ItemEditView.png"
+              alt="Edit View"
+              className="rounded-xl shadow-lg hover:scale-[1.02] transition"
+            />
+          </a>
+          <a
+            href="/screenshots/food-tracker/MapsView.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/screenshots/food-tracker/MapsView.png"
+              alt="Maps View"
+              className="rounded-xl shadow-lg hover:scale-[1.02] transition"
+            />
+          </a>
         </div>
       </section>
 
@@ -99,11 +123,17 @@ export default function FoodTrackerProject() {
       <section className="mb-10">
         <h2 className="text-2xl font-semibold mb-4">Architecture</h2>
         <div className="max-w-4xl mx-auto bg-neutral-900 p-6 rounded-2xl">
-          <img
-            src="/screenshots/food-tracker/architecture.png"
-            alt="Food Tracker Android App Architecture Diagram"
-            className="rounded-xl shadow-lg w-full"
-          />
+          <a
+            href="/screenshots/food-tracker/architecture.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/screenshots/food-tracker/architecture.png"
+              alt="Food Tracker Android App Architecture Diagram"
+              className="rounded-xl shadow-lg w-full hover:scale-[1.02] transition"
+            />
+          </a>
           <p className="text-sm text-neutral-500 text-center mt-3">
             High-level architecture showing the interaction between the Android
             UI layer, SQLite data storage, background WorkManager jobs, and
