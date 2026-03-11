@@ -1,18 +1,22 @@
 type ExperienceProps = {
   title: string;
   company: string;
+  project?: string;
   timeframe?: string;
   description: string;
   highlights: string[];
+  techStack?: string[];
   screenshots?: string[]; // URLs of images
 };
 
 export default function Experience({
   title,
   company,
+  project,
   timeframe,
   description,
   highlights,
+  techStack,
   screenshots,
 }: ExperienceProps) {
   return (
@@ -21,17 +25,38 @@ export default function Experience({
         <h3 className="text-2xl md:text-3xl font-bold mb-1 text-neutral-100">
           {title}
         </h3>
-        <p className="text-neutral-400 mb-2">
-          {company} {timeframe && `• ${timeframe}`}
-        </p>
-        <p className="text-neutral-300 mb-4 leading-relaxed">{description}</p>
+
+        <div className="text-neutral-400 mb-1 text-sm md:text-base">
+          <span className="font-medium text-neutral-100">{company}</span>
+          {project && <span className="mx-2">• {project}</span>}
+        </div>
+        {timeframe && (
+          <p className="text-neutral-500 text-sm mb-2">{timeframe}</p>
+        )}
+
+        <p className="text-neutral-300 leading-relaxed">{description}</p>
       </div>
 
-      <ul className="list-disc list-outside px-5 text-neutral-300 mb-4">
-        {highlights.map((item, idx) => (
-          <li key={idx}>{item}</li>
-        ))}
-      </ul>
+      {techStack && (
+        <div className="flex flex-wrap gap-2">
+          {techStack.map((tech) => (
+            <span
+              key={tech}
+              className="text-sm bg-neutral-800 text-neutral-200 px-2 py-1 rounded-full"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      )}
+
+      {highlights.length > 0 && (
+        <ul className="list-disc list-outside pl-5 text-neutral-300 space-y-1">
+          {highlights.map((item, idx) => (
+            <li key={idx}>{item}</li>
+          ))}
+        </ul>
+      )}
 
       {screenshots && screenshots.length > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">

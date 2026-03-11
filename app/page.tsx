@@ -45,9 +45,18 @@ export default function Home() {
       <Section title="Professional Experience">
         <Experience
           title="UI Programmer"
-          company="Dead by Daylight • Behaviour Interactive"
+          company="Behaviour Interactive"
+          project="Dead by Daylight"
           timeframe="2022 - Present"
           description="Contributed to a live-service multiplayer game with 40k+ concurrent players, implementing production UI systems in Unreal Engine within a large-scale, collaborative codebase."
+          techStack={[
+            "C++",
+            "Unreal Engine",
+            "UMG",
+            "ActionScript",
+            "Jenkins",
+            "DataDog",
+          ]}
           highlights={[
             "Optimized rendering of a friends list supporting 2,000 entries by batching updates, reducing worst-case frame stalls from 13.5s to 266ms and single-entry updates from 10s to 4.7ms during profiling.",
             "Converted legacy UI widgets from Scaleform to Unreal Motion Graphics (UMG) as part of a UI modernization effort, contributing to ~100MB memory reduction in the main menu and ~150MB in the HUD",
