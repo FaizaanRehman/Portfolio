@@ -54,7 +54,7 @@ export default function Home() {
             "Designed a templated badge rendering framework supporting 90+ characters, reducing required UI widgets from ~360 character-specific instances to 4 reusable templates",
             "Optimized runtime HUD performance by recycling card widgets instead of reconstructing them, reducing allocations from 5 widgets per match to 3 reusable instances",
             "Implemented scalable HUD updates for a new 2v8 multiplayer mode, supporting variable player counts (4–8 players) and expanded match metrics",
-            "Improved progression system responsiveness by eliminating interaction delays and automating chained node collection, reducing user idle times by 400–860ms per interaction",
+            "Improved progression system responsiveness by eliminating interaction delays and automating chained node collection, reducing user idle times by up to 860ms per interaction",
             "Implemented reusable UI interaction systems such as configurable press-and-hold button behavior to support consistent input handling across multiple menu interfaces",
             "Diagnosed system issues by tracing client–backend API requests using Datadog, identifying misconfigured environment settings causing feature failures",
             "Resolved crashes and soft locks caused by lifecycle errors, delegate binding issues, and asynchronous race conditions, improving runtime stability across platforms",

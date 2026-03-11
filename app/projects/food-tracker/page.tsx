@@ -81,19 +81,19 @@ export default function FoodTrackerProject() {
           <li>
             Built an inventory tracking system allowing users to store
             ingredient details including quantity, expiration date, and images
-            using a local <strong>SQLite database</strong>.
+            using a local <strong>SQLite database</strong>
           </li>
 
           <li>
             Implemented a background expiration notification pipeline using{" "}
             <strong>Android WorkManager</strong> to periodically query stored
             ingredient data and dispatch alerts through the{" "}
-            <strong>NotificationManager</strong>.
+            <strong>NotificationManager</strong>
           </li>
           <li>
-            Implemented location-based food bank discovery by launching
+            Implemented location-based food bank discovery by launching{" "}
             <strong>Google Maps via Android Intents</strong> to help users
-            quickly find nearby donation centers.
+            quickly find nearby donation centers
           </li>
         </ul>
       </section>

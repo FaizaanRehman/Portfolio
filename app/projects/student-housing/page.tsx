@@ -46,18 +46,18 @@ export default function StudentHousingProject() {
           <li>
             Built a cloud-based file storage pipeline using the
             <strong> Google Drive API</strong>, storing media externally and
-            persisting file URLs in the database to prevent database bloat.
+            persisting file URLs in the database to prevent database bloat
           </li>
           <li>
             Designed a real-time chat system using
             <strong> Firebase Cloud Firestore</strong>, enabling live messaging
             between students and property owners without a custom WebSocket
-            backend.
+            backend
           </li>
           <li>
             Implemented a flexible listing data model allowing each property to
             attach multiple images and supporting documents such as lease
-            agreements and floor plans.
+            agreements and floor plans
           </li>
         </ul>
       </section>
