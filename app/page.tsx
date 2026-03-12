@@ -118,21 +118,44 @@ export default function Home() {
       <Section title="Skills">
         <Skills
           skills={[
-            "React",
-            "Next.js",
-            "TypeScript",
-            "JavaScript",
-            "HTML/CSS",
-            "Node.js",
-            "PostgreSQL",
-            "GitHub Actions",
-            "Python",
-            "Tailwind CSS",
-            "Unreal Engine",
-            "C++",
-            "Android Studio",
-            "Git",
-            "Netlify",
+            {
+              category: "Languages",
+              items: [
+                "TypeScript",
+                "JavaScript",
+                "Java",
+                "Python",
+                "C/C++",
+                "SQL",
+                "Kotlin",
+                "Groovy",
+              ],
+            },
+            {
+              category: "Frameworks",
+              items: [
+                "React",
+                "Next.js",
+                "Node.js",
+                "Django",
+                "Angular",
+                "Tailwind CSS",
+                "Unreal Engine (UMG)",
+              ],
+            },
+            {
+              category: "Tools/Platforms",
+              items: [
+                "Git",
+                "GitHub Actions",
+                "Docker",
+                "Android Studio",
+                "Linux",
+                "Netlify",
+                "Cloudinary",
+              ],
+            },
+            { category: "AI/ML", items: ["Hugging Face", "Meta Llama 3.1 8B"] },
           ]}
         />
       </Section>
