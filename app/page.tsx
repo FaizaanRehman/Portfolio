@@ -165,7 +165,7 @@ export default function Home() {
           email="fhrehman@uwaterloo.ca"
           github="https://github.com/faizaanrehman"
           linkedin="https://www.linkedin.com/in/faizaan-rehman/"
-          resume="/resume.pdf"
+          resume="/FaizaanRehman.pdf"
         />
       </Section>
     </main>
