@@ -42,7 +42,7 @@ export default function Home() {
         />
       </Section>
 
-      <Section title="Professional Experience">
+      <Section id="experience" title="Professional Experience">
         <Experience
           title="UI Programmer"
           company="Behaviour Interactive"
