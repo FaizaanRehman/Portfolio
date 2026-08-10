@@ -69,6 +69,7 @@ export default function Home() {
             "Resolved crashes and soft locks caused by lifecycle errors, delegate binding issues, and asynchronous race conditions, improving runtime stability across platforms",
           ]}
           screenshots={[]}
+          detailsLink="/experience/behaviour-interactive/dead-by-daylight"
         />
       </Section>
 

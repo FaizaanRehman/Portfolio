@@ -7,6 +7,7 @@ type ExperienceProps = {
   highlights: string[];
   techStack?: string[];
   screenshots?: string[]; // URLs of images
+  detailsLink?: string;
 };
 
 export default function Experience({
@@ -18,6 +19,7 @@ export default function Experience({
   highlights,
   techStack,
   screenshots,
+  detailsLink,
 }: ExperienceProps) {
   return (
     <div className="bg-neutral-900 rounded-2xl p-8 shadow-lg shadow-black/40 flex flex-col gap-6">
@@ -57,6 +59,17 @@ export default function Experience({
           ))}
         </ul>
       )}
+
+      <div className="flex gap-4 flex-wrap">
+        {detailsLink && (
+          <a
+            href={detailsLink}
+            className="px-5 py-2 bg-white text-black font-medium rounded-lg hover:opacity-90 transition"
+          >
+            View UI Work
+          </a>
+        )}
+      </div>
 
       {screenshots && screenshots.length > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
